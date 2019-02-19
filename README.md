@@ -4,7 +4,7 @@ Magento 2 module to redirect to the product, when there is only one product in a
 
 ## How it works
 
-This extension adds a [Plugin class](https://github.com/JanPetr/one-result-redirect/blob/master/Plugin/RedirectOnOneResultPlugin.php) to Algolia's back-end search [Adapter class](https://github.com/algolia/algoliasearch-magento-2/blob/master/Adapter/Algolia.php), which checks the number of results returned by Algolia. 
+This extension adds a [Plugin class](https://github.com/JanPetr/one-result-redirect/blob/master/Plugin/RedirectOnOneResultPlugin.php) ([How Plugins work](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/plugins.html)) to Algolia's back-end search [Adapter class](https://github.com/algolia/algoliasearch-magento-2/blob/master/Adapter/Algolia.php), which checks the number of results returned by Algolia. 
 
 If there is only one product returned from Algolia, the extension redirects a user to this returned product.
 
